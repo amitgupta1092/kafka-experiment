@@ -19,6 +19,13 @@ target/
 *.iml
 *.ipr
 
+**.log.**
+*.log
+
+kafka/logs/*.log
+
+*.DS_Store
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

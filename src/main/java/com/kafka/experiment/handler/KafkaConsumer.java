@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaConsumer {
 
-    @KafkaListener(topics = {"test-topic"})
+    @KafkaListener(topics = {"test-topic-sp"})
     private void consumeKafkaRecord(ConsumerRecord<String, String> consumerRecord) {
         System.out.println("received message : " + consumerRecord.value());
     }

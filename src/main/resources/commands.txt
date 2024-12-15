@@ -1,3 +1,7 @@
-kafka-topics.sh --bootstrap-server localhost:9091 --topic test-topic --create --partitions 3 --replication-factor 1
+kafka-topics.sh --bootstrap-server localhost:9091 --topic test-topic --create --partitions 1 --replication-factor 1
 
 kafka-topics.sh --zookeeper localhost:2181 --list
+
+kafka-topics.sh --bootstrap-server localhost:9091 --describe --topic test-topic
+
+kafka-topics.sh --bootstrap-server localhost:9091 --delete --topic test-topic
